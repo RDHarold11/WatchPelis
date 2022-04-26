@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Poppins';
+ /* background: rgb(1,1,9);
+background: linear-gradient(90deg, rgba(1,1,9,1) 0%, rgba(83,156,214,1) 0%, rgba(0,0,0,1) 0%, rgba(84,84,84,1) 0%, rgba(59,117,186,1) 56%); */
+background: rgb(1,1,9);
+background: linear-gradient(90deg, rgba(1,1,9,1) 0%, rgba(37,53,66,1) 0%, rgba(98,63,63,1) 0%, rgba(55,35,35,1) 0%, rgba(34,92,162,1) 56%);
+
+}
+/* Header  */
+header{
+    color: white;
+    min-height: 80vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+#cambio{
+    background-color: #333;
+    position: fixed;
+}
+#nocambio{
+    background-color: none;
+    position: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.content{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,44,212,1) 0%, rgba(1,0,1,1) 0%, rgba(71,169,224,1) 0%, rgba(170,43,177,1) 56%);
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right p{
+    margin-left: 10px;
+}
+.right img{
+    margin-left: 15px;
+    padding: 3px 3px;
+    border-radius: 50%;
+    background-color: white;
+    max-width: 45px;
+}
+.content h2{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.content .btn-button{
+    width: 50%;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.content p{
+    margin: 15px 0;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Elementos del Replay */
+.play{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: 4px;
+    outline: 2px solid #fff;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+
+/* Seccion de nuevos lanzamientos */
+.container{
+    width: 90%;
+    margin:auto;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.grid{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.new-section .nuevo img,
+.new-section .visto img{
+    max-width: 250px;
+    max-height: 300px;
+}
+.new-section h2{
+    margin-bottom:6px ;
+    font-size: 19px;
+    width: 25%;
+    text-align: center;
+}
+section{
+    margin-top: 20px;
+}
+
+/* Section de continuar viendo */
+.visto .movies-card img:first-child{ 
+    border-bottom: 3px solid #FD5D5D ;
+}
+
+/* Populares */
+.Popular .grid{
+    display: grid;
+    grid-template-columns:20% 60% 20%;
+}
+.Popular .movies-card img{
+    max-height: 450px;
+}
+/* Buscar efectos hover en imagenes */
+
+
+/* Most watched */
+.most-watched .text{
+    text-align: center;
+    
+}
+.most-watched .grid{
+    grid-template-columns: repeat(6, 1fr);
+}
+.most-watched img{
+    max-height: 300px;
+}
+.most-watched .text p{
+    margin: 14px;
+}
+.most-watched .text button{
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Estrellas */
+
+.stars .grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+}
+.stars .text h2{
+    margin-bottom:6px ;
+    font-size: 19px;
+    width: 17%;
+    text-align: center;
+}
+.stars .text p{
+    width: 40%;
+    text-align: right;
+}
+
+.stars .grid img{
+    max-width: 400px;
+    max-height: 400px;
+    
+}
+
+/* Info */
+.info .grid{
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+.img img{
+    max-height:400px ;
+    object-fit: cover;
+}
+
+.info .text p{
+    margin: 20px 0;
+}
+.info .text{
+    text-align: left;
+    margin-top:80px;
+}
+.info button{
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Marvel Section */
+.marvel-section .grid{
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.marvel-section img{
+    max-height: 300px;
+}
+.marvel-section h2{
+    margin-bottom:6px ;
+    font-size: 19px;
+    width: 20%;
+    text-align: center;
+}
+.marvel-section .text p{
+    margin-bottom:6px ;
+    font-size: 19px;
+    width: 27%;
+    text-align: center;
+}
+
+/* Kids */
+.kids .grid{
+    grid-template-columns: repeat(6, 1fr);
+}
+.kids .content__kids img{
+    max-height: 300px;
+}
+.kids .text h2{
+    margin-bottom:6px ;
+    font-size: 19px;
+    width: 20%;
+    text-align: center;
+}
+
+.kids_two .grid{
+    grid-template-columns: repeat(6, 1fr);
+}
+.kids_two img{
+    max-height: 300px;
+}
+
+.personajes h2{
+    text-align: center;
+    margin: 10px;
+}
+.personajes .grid{
+    grid-template-columns: repeat(6, 1fr);
+}
+.personajes img{
+    transition: transform 0.3s ease-in;
+    max-height: 200px;
+    border-radius: 40%;
+}
+
+/* About */
+.about{
+    margin-top: 30px;
+}
+.about .section__content p{
+    margin: 15px 0;
+}
+.about .section__content{
+    text-align: center;
+    margin-top: 35px;
+}
+.about .section__content button{
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+}
+.about .grid{
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.about img{
+    max-height: 300px;
+}
+
+/* Footer */
+.footer{
+    padding: 30px 40px;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+.footer .grid{
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer ul{
+    margin: 0 auto;
+}
+/* Animations */
+.grid img:hover{
+    opacity: 0.5;
+}
+.personajes img:hover{
+    transform: scale(0.95);
+    opacity: 1;
+}
+.btn:hover{
+    transform: scale(0.95);
+}
+
+.menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    z-index: 3;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* middle kids */
+
+
+
+/* Media queries */
+
+@media (max-width: 768px){
+    /* Parte del icono del emenu */
+    .menu-btn{
+        display: block;
+    }
+    .content{
+        width: 100%;
+    }
+    .nav-items .btn{
+        display: flex;
+        justify-content: center;   
+    }
+    .nav .nav-items{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        z-index: 3000;
+        opacity: 0.9;
+        background-color: #333;
+        height: 660px;
+        transform: translateX(-400px);
+    }
+    .nav .nav-items li{
+        padding: 20px;
+        font-size: 14px;
+    }
+    .nav .nav-items.show{
+        transform: translateX(-20px);
+        background-image: none;
+        transition: transform .5s ease-in-out;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .new-section h2{
+       width: 100%;
+    }
+    .Popular .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr;
+        text-align: center;
+    }
+    .Popular img{
+        width: 100%;
+        height: 100%;
+    }
+    .Popular .card2{
+        grid-column: 1 /4;
+        grid-row: 2/3;
+    }
+    .most-watched .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .most-watched .text{
+        margin-top: 60px;
+    }
+    .most-watched img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .stars .text h2,
+    .stars .text p{
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .stars .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .stars img{
+        height: 100%;
+        width: 100%;
+    }
+    .stars p{
+        text-align: center;
+    }
+    .stars .Tom{
+        grid-column: 1 / 4;
+
+    }
+    .info{
+        margin-top: 80px;
+    }
+    .info .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .info img{
+        width: 100%;
+        height: 100%;
+    }
+    .marvel-section{
+        margin-top: 40px;
+    }
+    .marvel-section .text h2,
+    .marvel-section .text p{
+        width: 100%;
+        margin: 6px 0;
+        text-align: center;
+    }
+    .marvel-section .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .kids{
+        margin-top: 30px;
+    }
+    .kids img{
+        width: 100%;
+        height: 100%;
+    }
+    .kids .text h2{
+        width: 100%;
+        margin: 6px 0;
+    }
+    .kids p{
+        text-align: center;
+    }
+    .kids .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about{
+        margin-top: 40px;
+    }
+    .about .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about .section__content{
+        padding-top: 30px;
+    }
+    .footer .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .personajes .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .kids_two p{
+        text-align: center;
+    }
+    .kids_two .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .content{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .personajes .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .kids_two .grid{
+        grid-template-columns: 1fr 1fr;
+        margin-top: 80px;
+    }
+    .kids .grid{
+        row-gap: 60px;
+    }
+    .marvel-section .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .info .grid{
+        grid-template-columns: 1fr ;
+    }
+    .info .text{
+        text-align: center;
+    }
+}
+@media (min-width:768px) and (max-width: 1190px){
+    .content{
+        width: 100%;
+    }
+    .new-section .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+    .new-section h2{
+        width: 100%;
+    }
+    .Popular .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .Popular .card2{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .Popular h2,
+    .Popular .movies-card p{
+        text-align: center;
+    }
+    .most-watched .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .stars .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stars p{
+        width: 100%;
+        text-align: center;
+    }
+    .stars .text h2,
+    .stars .text p{
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .info .grid{
+        grid-template-columns: 1fr;
+    }
+    .info .text{
+        width: 100%;
+        text-align: center;
+    }
+    .marvel-section .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .marvel-section .text h2,
+    .marvel-section .text p{
+        width: 100%;
+        text-align: center;
+    }
+    .kids .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .kids .text h2{
+        width: 100%;
+        text-align: center;
+    }
+    .kids_two .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .personajes .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
